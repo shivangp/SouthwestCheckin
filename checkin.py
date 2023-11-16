@@ -36,7 +36,7 @@ def schedule_checkin(flight_time, reservation):
         # pretty print our wait time
         m, s = divmod(delta, 60)
         h, m = divmod(m, 60)
-        print("Too early to check in.  Waiting {} hours, {} minutes, {} seconds".format(trunc(h), trunc(m), s))
+        print("Too early to check in.  Waiting {} hours, {} minutes, {} seconds".format(trunc(h), trunc(m), trunc(s)))
         try:
             time.sleep(delta)
         except OverflowError:
